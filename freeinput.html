@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Loan Sim</title>
+</head>
+<body>
+    <div id="main_viewport">
+        <div id="title">
+            <p id="mini_title">あなたに合わせたお支払い方法をご用意！</p>
+            <p id="main_title">ローンシミュレーション</p>
+            <p class="contents_text">頭金・支払い回数・ボーナスを自由に入力します。</p>
+        </div>
+        <div id="input_area">
+            <div id="free_content1">
+                <p class="free_key">支払回数</p>
+                <select id="free_frequency_selection" class="free_value"></select>
+            </div>
+            <div id="free_content2">
+                <p class="free_key">頭金</p>
+                <input type="number" id="free_deposit" class="free_value"><p style="font-size: 18px; font-weight: bold;"> 万円</p>
+            </div>
+            <div id="free_content3">
+                <p class="free_key">ボーナス</p>
+                <input type="number" id="free_bonus" class="free_value"><p style="font-size: 18px; font-weight: bold;"> 万円×年2回</p>
+            </div>
+        </div>
+        <button id="free_decision" onclick="page_transition('free_result')">結果を見る</button>
+        <button class="back-button" onclick="page_transition('index')"></button>
+</body>
+<script src="./js/index.js"></script>
+<script>
+    //プルダウンの値作成
+    const selectElement = document.getElementById("free_frequency_selection");
+
+    for(let i = 48; i <= 120; i++){
+        const option = document.createElement("option");
+        option.value = i;
+        option.textContent = i + "回";
+        selectElement.appendChild(option);
+    }
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Loan Sim</title>
+</head>
+<body>
+    <div id="main_viewport">
+        <div id="title">
+            <p id="mini_title">あなたに合わせたお支払い方法をご用意！</p>
+            <p id="main_title">ローンシミュレーション</p>
+        </div>
+        <div id="select_course" class="button-container">
+            <button onclick="page_transition('free')">
+                <span class="arrow">></span>
+                頭金・支払い回数<br>ボーナスを自由に入力
+            </button>
+            <button onclick="page_transition('select_money')">
+                <span class="arrow">></span>
+                希望の毎月金額<br>から選ぶ
+            </button>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+</html>

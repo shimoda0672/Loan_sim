@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Loan Sim</title>
+</head>
+<body>
+    <div id="main_viewport">
+        <div id="title">
+            <p id="mini_title">あなたに合わせたお支払い方法をご用意！</p>
+            <p id="main_title">ローンシミュレーション</p>
+            <p class="contents_text">頭金・支払い回数・ボーナスを自由に入力します。</p>
+        </div>
+        <div id="freeinput_result_viewroot">
+            <div id="view_area">
+                <div id="free_result_content1">
+                    <p class="free_result_key">支払回数</p>
+                    <p class="free_view_value" id="free_view_frequency_selection"></p>
+                </div>
+                <div id="free_result_content2">
+                    <p class="free_result_key">頭金</p>
+                    <p class="free_view_value" id="free_view_deposit"></p>
+                </div>
+                <div id="free_result_content3">
+                    <p class="free_result_key">ボーナス</p>
+                    <p class="free_view_value" id="free_view_bonus"></p>
+                </div>
+                <div id="free_result_content4">
+                    <p class="free_result_key">支払金額</p>
+                    <p class="free_view_value" id="free_view_total"></p>
+                </div>
+            </div>
+            <div id="send_select_money" class="button-container">
+                <button id="freeinput_send_select_money" onclick="page_transition('select_money')">
+                    <span class="arrow">></span>
+                    希望の毎月金額<br>から選んでみる
+                </button>
+            </div>
+        </div>
+        <button class="back-button" onclick="page_transition('free')"></button>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+<script>
+    const frequency = sessionStorage.getItem('frequency');
+    const deposit = sessionStorage.getItem('deposit');
+    const bonus = sessionStorage.getItem('bonus');
+
+    document.getElementById('free_view_frequency_selection').textContent = frequency + "回";
+    document.getElementById('free_view_deposit').textContent = deposit + "万円";
+    document.getElementById('free_view_bonus').textContent = bonus + "万円×年2回";
+    result = return_result(frequency, deposit, bonus);
+    document.getElementById('free_view_total').textContent = result + "円";
+
+    function return_result(frequency, deposit, bonus) {
+        return "52,440";
+    }
+</script>
+</html>

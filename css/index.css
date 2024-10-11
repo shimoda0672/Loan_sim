@@ -1,0 +1,221 @@
+/* -----共通----*/
+html, body{
+    height: 100%;
+}
+
+#main_viewport{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom:20%
+}
+
+#mini_title{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#main_title{
+    font-weight: bold;
+    font-size: 54px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 10px solid #C00000;
+}
+
+.contents_text{
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.back-button {
+    background-image: url('../image/back.png');
+    background-size: cover; /* 画像をボタン全体にフィットさせる */
+    background-repeat: no-repeat; /* 画像の繰り返しを禁止 */
+    border: none;
+    padding: 0;
+    width: 100px;
+    height: 80px;
+}
+
+/*----index.html----*/
+.button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button-container button {
+    border-color: #C00000;
+    background-color: #ffffff;
+    border-width: 3px;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+    margin: 10px;
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    padding: 10px 20px;
+  }
+
+  .arrow {
+    position: absolute; /* 矢印を絶対配置にする */
+    top: 90%; /* ボタンの上から50%の位置 */
+    right: 10px; /* ボタンの右から10pxの位置 */
+    transform: translateY(-50%); /* 矢印を垂直方向に中央揃え */
+    color: #C00000; /* 矢印の色を赤にする */
+    font-size: 72px;
+  }
+
+/*----freeinput.html----*/
+.free_key{
+    margin-right: 20px;
+    padding: 0 20px;
+    width: 20%;
+    background-color: #e8e8e8;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+.free_value{
+    width: 40%;
+    height: 48px;
+}
+
+#free_content1 {
+    display: flex;
+    align-items: center;
+}
+
+#free_content2 {
+    display: flex;
+    align-items: center;
+}
+
+#free_content3 {
+    display: flex;
+    align-items: center;
+}
+
+#free_content4 {
+    display: flex;
+    align-items: center;
+}
+
+select{
+    border-radius: 10px;
+    border-color: #C00000;
+    border-width: 3px;
+    font-size: 18px;
+}
+
+option{
+    text-align: center;
+    font-size: 18px;
+}
+
+input{
+    font-size: 18px;
+}
+
+#free_deposit{
+    width: 32%;
+    text-align: center;
+}
+
+#free_bonus{
+    width: 32%;
+    text-align: center;
+}
+
+#free_decision{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 30%;
+    height: 52px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #C00000;
+    border-radius: 10px;
+}
+
+/*----freeinput_result.html----*/
+
+
+#freeinput_result_viewroot{
+    display: flex;
+    width: 100%;
+}
+
+#free_result_content1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#free_result_content2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#free_result_content3 {
+    width: 103%;
+    display: flex;
+    align-items: center;
+}
+
+#free_result_content4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.free_view_value{
+    width: 51%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.free_result_key{
+    width: 40%;
+    padding: 0 20px;
+    background-color: #e8e8e8;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+#send_select_money{
+    margin-left: 30px;
+    width: 40%;
+}
+
+/*----select_money.html----*/
+td{
+    width: 50vh;
+}
+
+.money_button{
+    border-color: #C00000;
+    background-color: #ffffff;
+    border-width: 3px;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+    margin: 10px;
+    height: 8vh;
+    width: 100%;
+    position: relative;
+    padding: 10px 20px;
+}

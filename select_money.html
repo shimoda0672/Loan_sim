@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Loan Sim</title>
+</head>
+<body>
+    <div id="main_viewport">
+        <div id="title">
+            <p id="mini_title">あなたに合わせたお支払い方法をご用意！</p>
+            <p id="main_title">ローンシミュレーション</p>
+            <p class="contents_text">希望の毎月金額から選ぶ。</p>
+        </div>
+        <div id="money_table">
+            <table>
+                <tr id="row1">
+                    <td><button class="money_button" id="ten_thousand" onclick="page_transition('select_money_calc')">~10000</button></td>
+                    <td><button class="money_button" id="twenty_thousand" onclick="page_transition('select_money_calc')">~20000</button></td>
+                </tr>
+                <tr id="row2">
+                    <td><button class="money_button" id="thirty_thousand" onclick="page_transition('select_money_calc')">~30000</button></td>
+                    <td><button class="money_button" id="forty_thousand" onclick="page_transition('select_money_calc')">~40000</button></td>
+                </tr>
+                <tr id="row3">
+                    <td><button class="money_button" id="fifty_thousand" onclick="page_transition('select_money_calc')">~50000</button></td>
+                    <td><button class="money_button" id="sixty_thousand" onclick="page_transition('select_money_calc')">~60000</button></td>
+                </tr>
+            </table>
+        </div>  
+        <button class="back-button" onclick="page_transition('index')"></button>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+</html>
